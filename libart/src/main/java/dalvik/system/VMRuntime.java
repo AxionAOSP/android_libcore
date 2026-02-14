@@ -357,6 +357,7 @@ public final class VMRuntime {
      * @hide
      */
     @UnsupportedAppUsage
+    @SystemApi(client = MODULE_LIBRARIES)
     public float setTargetHeapUtilization(float newTarget) {
         if (newTarget <= 0.0f || newTarget >= 1.0f) {
             throw new IllegalArgumentException(newTarget + " out of range (0,1)");
